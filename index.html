@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CSS GRID</title>
+</head>
+<body>
+  <section class="parent">
+    <h1 class="main-title">
+      GRID CSS LAYOUT
+    </h1>
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Grid System
+      </h4>
+      <p class="detail">
+        Explanation: <span class="css">display: grid</span> makes a 'div', a grid container,
+        grid is made up of grid container and its direct children as grid items.
+      </p>
+      <h3 class="detail">Points to understand</h3>
+      <ol class="points">
+        <li>We have column axis and row axis, column as y axis and row as x axis.</li>
+        <li>This axis are not interchangeable as we can do in flex box.</li>
+        <li>There is grid line in grid layout which is imaginary line which separates rows and columns,</li>
+        <li>They are numbered automatically for columns and rows. starting from 1 to n.</li>
+        <li>Space between columns are called column gutter and space between rows are called as row gutter.</li>
+        <li>Space between two grid lines is called a track. if the track is horizontal it is called row. if it is vertical it is called column.</li>
+        <li>Area between two horizontal and two vertical grid line is called grid area making a square or rectangle.</li>
+        <li>Area between two adjacent grid line is called grid cell.</li>
+      </ol>
+
+      <div class="img">
+        <img src="img/explanation.png" alt="explanation" >
+      </div>
+      <h4 class="sub-title">
+        Grid Properties 
+      </h4>
+      <div class="img">
+        <img src="img/properties.png" alt="properties">
+      </div>
+    </div>
+    <div class="grid-container-3">
+      <h4 class="sub-title">
+        display: grid; 
+      </h4>
+      <p class="detail">
+        Explanation: <span class="css">display: grid</span> makes a 'div', a grid container,
+        grid is made up of grid container and its direct children as grid items.
+        we have column axis and row axis, column as y axis and row as x axis.
+        this axis are not interchangeable as we can do in flex box.
+      </p>
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+    
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        grid-template-rows: 120px 120px; 
+        grid-template-columns: 120px 120px 120px;
+      </h4>
+      <p class="detail">
+        Explanation for: <span class="css">grid-template-rows: 120px 120px;</span> 
+        will make the child elements to have 2 rows of height 120px each, we can create more rows by adding height of each row;
+        <span class="css">grid-template-rows</span> is applied in container where we defined display grid property and not in grid-item element.
+      </p>
+      <p class="detail">
+        Explanation for: <span class="css">grid-template-colums: 120px 120px 120px;</span> 
+        will make the child elements to have 3 columns of 120px wide each, we can create more columns by giving space and adding width of each column;
+        <span class="css">grid-template-columns</span> is applied in container where we defined display grid property and not in grid-item element.
+      </p>
+      <div class="grid-container-4">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        grid-column-gap: 20px; 
+        grid-row-gap: 20px;
+        grid-gap: 20px;
+      </h4>
+      <p class="detail">
+        Explanation for: <span class="css">grid-column-gap: 20px </span> 
+        is used to give some space between 2 or more columns.
+      </p>
+      <p class="detail">
+        Explanation for: <span class="css">grid-row-gap: 20px</span> 
+        is used to give some space between 2 or more rows.
+      </p>
+
+      <p class="detail">
+        Explanation for: <span class="css">grid-gap: 20px</span> 
+        is used to give some space between 2 or more rows and columns combined.
+      </p>
+
+      <div class="grid-container-5">
+        <div class="grid-item m-0">1</div>
+        <div class="grid-item m-0">2</div>
+        <div class="grid-item m-0">3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(2, 150px) 300px;
+      </h4>
+      <p class="detail">
+        Explanation for: <span class="css"> grid-template-rows: repeat(2, 150px); </span> 
+        this will make 2 rows of height 150px.
+      </p>
+      <p class="detail">
+        Explanation for: <span class="css">grid-template-rows: repeat(2, 150px) 300px; </span> 
+        this will make 2 columns of height width 150px and a column of width 300px;
+      </p>
+
+      <p class="detail">
+        repeat() function is used to repeat the value rather than typing it 2 times or in case if we need to make more grids like 6 7,
+        then typing 140px 6, 7 times would be pain. 
+      </p>
+
+      <div class="grid-container-6">
+        <div class="grid-item m-0">1</div>
+        <div class="grid-item m-0">2</div>
+        <div class="grid-item m-0">3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: 1fr 2fr 1fr;
+      </h4>
+      <p class="detail">
+        Explanation for: <span class="css"> grid-template-columns: 1fr 2fr 1fr; </span> 
+        this will make 3 columns of which 1 and last will be of same width but middle one will be double the size of 1st and last
+      </p>
+
+      <p class="detail">
+        repeat() function is used to repeat the value rather than typing it 2 times or in case if we need to make more grids like 6 7,
+        then typing 140px 6, 7 times would be pain. 
+      </p>
+
+      <div class="grid-container-7">
+        <div class="grid-item m-0">1</div>
+        <div class="grid-item m-0">2</div>
+        <div class="grid-item m-0">3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: 50% 1fr 1fr;
+      </h4>
+      <p class="detail">
+        Explanation for: <span class="css"> grid-template-columns: 50% 1fr 1fr; </span> 
+        this will create 3 columns of which 1st will be exact 50% of total width and next 2 columns will be of equal width, 
+        Note: the grid-gap is not considered in calculating the width of column having 50 percentage rather the other 50% makes up 2 columns that includes grid gap as well
+      </p>
+
+      <p class="detail">
+        repeat() function is used to repeat the value rather than typing it 2 times or in case if we need to make more grids like 6 7,
+        then typing 140px 6, 7 times would be pain. 
+      </p>
+
+      <div class="grid-container-8">
+        <div class="grid-item m-0">1</div>
+        <div class="grid-item m-0">2</div>
+        <div class="grid-item m-0">3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 50% 1fr 1fr;
+      </h4>
+      <p class="detail">
+        Explanation for: <span class="css"> grid-template-rows: repeat(2, 1fr);</span> 
+        this will create 2 rows of equal height. For using fr unit, we need to set the height of container so as the grid items can take space freely.
+      </p>
+
+      <p class="detail">
+        repeat() function is used to repeat the value rather than typing it 2 times or in case if we need to make more grids like 6 7,
+        then typing 140px 6, 7 times would be pain. 
+      </p>
+
+      <div class="grid-container-9">
+        <div class="grid-item m-0">1</div>
+        <div class="grid-item m-0">2</div>
+        <div class="grid-item m-0">3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Positioning grid items.
+        
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      </h4>
+      <p class="detail">
+        Explanation for: <span class="css"> grid-row-start: 2</span> 
+        this is added in grid item and not in grid container, this makes the particular item to start from grid-line number 2, grid line helps a lot in choosing these numbers,
+        Similarly, <span class="css">grid-row-end: 3;</span>
+        this is added in grid item and not in grid container, this makes the particular item to end from grid-line number 3, grid line helps a lot in choosing these numbers,
+      </p>
+
+      <p class="detail">
+        Explanation for: <span class="css"> grid-column-start: 2</span> 
+        this is added in grid item and not in grid container, this makes the particular item to start from grid-line number 2, grid line helps a lot in choosing these numbers,
+        Similarly, <span class="css">grid-column-end: 3;</span>
+        this is added in grid item and not in grid container, this makes the particular item to end from grid-line number 3, grid line helps a lot in choosing these numbers,
+      </p>
+
+      <div class="grid-container-10">
+        <div class="grid-item grid-item-1 m-0">1</div>
+        <div class="grid-item m-0">2</div>
+        <div class="grid-item m-0">3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+      </h4>
+      <p class="detail">
+        Explanation for: <span class="css"> grid-row: 2 / 3;</span> 
+        this is added in grid item and not in grid container, 
+        short hand for grid-row-start and grid-row-end.
+        Similarly, <span class="css">grid-column: 2 / 3;</span>
+        this is added in grid item and not in grid container, 
+        short hand for grid-column start and grid-column-end.
+        Note: start value / end value
+      </p>
+      <div class="grid-container-10">
+        <div class="grid-item grid-item-2 m-0">1</div>
+        <div class="grid-item m-0">2</div>
+        <div class="grid-item m-0">3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        grid-row: 2 / 4;
+        grid-column: 3 / 1;
+      </h4>
+      <p class="detail">
+        Explanation for: <span class="css"> grid-row: 2 / 4;</span> 
+        this is added in grid item and not in grid container, 
+        short hand for grid-row-start and grid-row-end.
+        you can see grid row start is 2 and grid row end is 4 so the grid item will span from 2 to 4 covering it.
+        Similarly, for <span class="css">grid-column: 3 / 1;</span>
+        this is added in grid item and not in grid container, 
+        and will span from 1 to 3 grid line.
+
+        Note: The rest grid item will be pushed to another row if no space is available.
+      </p>
+      <div class="grid-container-10">
+        <div class="grid-item grid-item-3 m-0">1</div>
+        <div class="grid-item m-0">2</div>
+        <div class="grid-item m-0">3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Note: 
+        positioning multiple grid items 1
+      </h4>
+      <p class="detail">
+        Explanation:
+        if we position multiple grid as grid 1 and 3, in which first one is positioned with grid row and grid column both
+        and the second one if positioned with only grid row or grid column will find new place to adjust, and rest of grids will find space and according to that it will fit
+      </p>
+      <div class="grid-container-10">
+        <div class="grid-item grid-row-2-3 grid-col-2-3 b-g m-0">1 grid-2-3 grid-col-2-3</div>
+        <div class="grid-item m-0">2 </div>
+        <div class="grid-item grid-col-1-3 b-b m-0">3 grid-col-1-3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Note:
+        positioning multiple grid items 2
+      </h4>
+      <p class="detail">
+        Explanation:
+        if we position both grid with both grid-row and grid column we see overlapping of one another.
+        we can use z-index to show that hidden grid item
+      </p>
+      <div class="grid-container-10">
+        <div class="grid-item grid-row-2-3 grid-col-2-3 b-g m-0">1 grid-2-3 grid-col-2-3</div>
+        <div class="grid-item m-0">2 </div>
+        <div class="grid-item grid-col-1-3 o-50 grid-row-2-3 b-b m-0">3 grid-col-1-3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        positioning grid items with span
+        grid-column: 1/span 3;
+      </h4>
+      <p class="detail">
+        Explanation:
+        span is used to stretch the grid item with the number specified so in this case the grid item 1 will stretch 3 grids counting from itself.
+      </p>
+      <div class="grid-container-10">
+        <div class="grid-item grid-col-span-3 m-0">1</div>
+        <div class="grid-item m-0">2 </div>
+        <div class="grid-item m-0">3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        grid-column: 1/ -1;
+      </h4>
+      <p class="detail">
+        Explanation:
+        -1 means till end of grid column, so the grid will span till last column
+      </p>
+      <div class="grid-container-10">
+        <div class="grid-item grid-col-minus-1 m-0">1 grid-column: 1/ -1;</div>
+        <div class="grid-item m-0">2 </div>
+        <div class="grid-item m-0">3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Note: 
+        grid-column: 3 / 10;
+        grid-row: 3/ 10;
+      </h4>
+      <p class="detail">
+        Explanation:
+        if we give higher number of position it will create that number of columns or rows and will try to fit the grid item.
+        Hence it is recommended to give only those positions which comes under the grid we defined inside container.
+      </p>
+      <div class="grid-container-10">
+        <div class="grid-item grid-row-3-10 m-0">1</div>
+        <div class="grid-item grid-col-3-10 m-0">2 </div>
+        <div class="grid-item m-0">3</div>
+        <div class="grid-item m-0">4</div>
+        <div class="grid-item m-0">5</div>
+        <div class="grid-item m-0">6</div>
+      </div>
+    </div>
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Challenge grid solution
+      </h4>
+      <div class="challenge-1">
+        <div class="container">
+          <div class="header">
+            Header
+          </div>
+          <div class="small-box">
+             Small box 1
+          </div>
+          <div class="small-box">
+             Small box 2
+          </div>
+          <div class="small-box">
+            Small box 3
+          </div>
+          
+          <div class="small-box sidebar">
+              Sidebar
+          </div>
+          <div class="main-content">
+             Main Content
+          </div>
+          <div class="footer">
+            Footer
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Grid positioning by naming line
+      </h4>
+      <p class="detail">
+        <strong>
+          Defining grid line names
+        </strong> 
+        <br> 
+        grid-template-rows: 
+        [header-start] 100px 
+        [header-end box-start] 200px 
+        [box-end main-start] 400px 
+        [main-end footer-start] 100px 
+        [footer-end];
+        <br>
+        <strong>
+          Explanation: 
+        </strong>
+        <br>
+        While defining grid-template-rows we can specify names of grid lines inside square brackets,
+        Here header-start is grid line 1, and header-end is grid line 2 row wise.
+        The same header-end can be called box-start hence, grid line 2 has two names header-end and box-start,
+        similarly names for grid line 3 is box-end and main-start ,
+        for grid line 4 is main-end and footer-start and
+        for grid line 5 is footer-end.
+      </p>
+
+      <p class="detail">
+        grid-template-columns: 
+        repeat(3, [col-start] 1fr [col-end]) 
+        200px [grid-end];
+        <br>
+        <strong>
+          Explanation: 
+        </strong>
+        <br>
+        While defining grid-template-columns we can specify names of grid lines inside square bracket,
+        here we have used repeat function so if we give name inside repeat function it creates a name set of grid lines.
+        hence the grid line 1 column wise will be col-start 1, for grid line 2 it will be 2 names i.e. col-end-1 col-start 2,
+        for grid line 3 it will be col-end 2 col-start 3, for grid-line 4 it will be col-end 3 grid-end
+      </p>
+
+      <p class="detail">
+        <strong>
+          positioning for header and footer: 
+        </strong>
+
+        grid-column: col-start 1 / grid-end;
+        <br>
+        <strong>
+          Explanation: 
+        </strong>
+        <br>
+        By using the above mentioned grid names we can position grid items.
+      </p>
+
+      <p class="detail">
+        <strong>
+          positioning for main content:
+        </strong>
+
+        grid-row: main-start/main-end;
+        grid-column: col-start 1 / col-end 3;
+      </p>
+
+      <p class="detail">
+        <strong>
+          positioning for sidebar:
+        </strong>
+        
+
+        grid-row: box-start/ main-end;
+        grid-column: col-end 3 / grid-end;
+      </p>
+      
+      
+      <div class="challenge-2">
+        <div class="container">
+          <div class="header">
+            Header
+          </div>
+          <div class="small-box">
+             Small box 1
+          </div>
+          <div class="small-box">
+             Small box 2
+          </div>
+          <div class="small-box">
+            Small box 3
+          </div>
+          
+          <div class="small-box sidebar">
+              Sidebar
+          </div>
+          <div class="main-content">
+             Main Content
+          </div>
+          <div class="footer">
+            Footer
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Grid positioning by grid template areas
+      </h4>
+
+      <p class="detail">
+        grid-template-areas: "head head head head" <br>
+                       "box box box side" <br>
+                       "main main main side" <br>
+                       "foot foot foot foot";
+                       <br>
+        <br>
+        <strong>
+          Explanation: 
+        </strong>
+        <br>
+        
+        <p class="detail">
+          We give the name to the each of grid cell depending on the design we want,
+          as in first row we need header to span across the entire column so we will write 4 head in first string, 
+          in next row we want 3 boxes so we write 3 box, followed by the sidebar hence we wrote side,
+          in next row we want main content to span across 3 columns hence we wrote 3 main, followed by sidebar denoted by side.
+          in next we wrote foot four times as footer spans across 4 column
+          and we simply use, in grid-item
+          <br>
+          <span class="css">grid-area: head</span> for header 
+          <br>
+          <span class="css">grid-area: box</span> for boxes 
+          <br>
+          <span class="css">grid-area: side</span> for sidebar
+          <br>
+          <span class="css">grid-area: main</span> for main
+          <br>
+          <span class="css">grid-area: foot</span> for footer
+        </p>
+      </p>
+      
+      <div class="challenge-3">
+        <div class="container">
+          <div class="header">
+            Header
+          </div>
+          <div class="small-box">
+             Small box 1
+          </div>
+          <div class="small-box">
+             Small box 2
+          </div>
+          <div class="small-box">
+            Small box 3
+          </div>
+          
+          <div class="small-box sidebar">
+              Sidebar
+          </div>
+          <div class="main-content">
+             Main Content
+          </div>
+          <div class="footer">
+            Footer
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Grid positioning by grid template areas
+      </h4>
+
+      <p class="detail">
+        grid-template-areas: ". head head ." <br>
+                       "box box box side" <br>
+                       "main main main side" <br>
+                       "foot foot foot foot";
+                       <br>
+        <br>
+        <strong>
+          Explanation: 
+        </strong>
+        <br>
+        
+        <p class="detail">
+          by giving a . in grid-template-areas we specify we dont need to show it.
+          <br>
+          <span class="css">grid-area: head</span> for header 
+          <br>
+          <span class="css">grid-area: box</span> for boxes 
+          <br>
+          <span class="css">grid-area: side</span> for sidebar
+          <br>
+          <span class="css">grid-area: main</span> for main
+          <br>
+          <span class="css">grid-area: foot</span> for footer
+        </p>
+      </p>
+      
+      <div class="challenge-4">
+        <div class="container">
+          <div class="header">
+            Header
+          </div>
+          <div class="small-box box-1">
+             Small box 1
+          </div>
+          <div class="small-box box-2">
+             Small box 2
+          </div>
+          <div class="small-box box-3">
+            Small box 3
+          </div>
+          
+          <div class="small-box sidebar">
+              Sidebar
+          </div>
+          <div class="main-content">
+             Main Content
+          </div>
+          <div class="footer">
+            Footer
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Implicit and explicit grids
+      </h4>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation: 
+        </strong>
+        <br>
+        When we define grid with grid-template-rows and grid-template-columns in this case we defined 2 x 2 grid i.e. 2 rows and 2 columns,
+        but the grid items are more than 4 items hence those which comes under 2x2 grid defined by us are called explicit grid,
+        whereas grids which are created and are positioned below these grids are called implicit grids.
+        we can style these implicit grids by using <span class="css">grid-auto-rows: 100px</span>
+        this will give height to the implicit grid row.
+      </p>
+      <div class="container grid-auto-rows-100">
+        <div class="item item--1">
+          modern explicit 
+        </div>
+        <div class="item item--2">css explicit</div>
+        <div class="item item--3"> with explicit</div>
+        <div class="item item--4">flexbox explicit</div>
+        <div class="item item--5">and implicit</div>
+        <div class="item item--6">grid implicit</div>
+        <div class="item item--7">is implicit</div>
+        <div class="item item--8">great implicit</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Changing grid behavior from rows to columns.
+      </h4>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation: 
+        </strong>
+        <br>
+        We can change it to make grids automatic placement of grids from rows to see as columns by using 
+        <span class="css">grid-auto-flow: column</span>
+        by default it is set to row hence the remaining grid items other than explicit grid items are added in row fashion,
+
+        we can now give width to implicit grid column by using <span class="css">grid-auto-column: .5fr</span>
+        Note: in order to use grid-auto-column the grid-auto-flow must be set to column similarly if we want to use grid-auto-row the grid-auto-flow must be set to row.
+      </p>
+      <div class="container grid-auto-flow-col grid-auto-col-half-fr">
+        <div class="item item--1">
+          modern explicit 
+        </div>
+        <div class="item item--2">css explicit</div>
+        <div class="item item--3">with explicit</div>
+        <div class="item item--4">flexbox explicit</div>
+        <div class="item item--5">and implicit</div>
+        <div class="item item--6">grid implicit</div>
+        <div class="item item--7">is implicit</div>
+        <div class="item item--8">great implicit</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Alignment of grid items.
+      </h4>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation: align-items: start | end | center | stretch;
+        </strong>
+        <br>
+        If we use <span class="css"> align-items: center</span> 
+        the grid items inside grid area will get centered vertically same as that in flexbox.
+        if we use <span class="css">align-items: start</span> 
+        the grid items will be placed at start inside grid area as same as that in flexbox.
+        if we use <span class="css">align-items: end</span> 
+        the grid items will be placed at bottom inside grid area as same as that in flexbox.
+        if we use <span class="css">align-items: stretch</span> 
+        the grid items will get stretched inside grid area as same as that in flexbox, this is default behavior.
+      </p>
+      <div class="container align-items-center">
+        <div class="item item--1">
+          modern explicit 
+        </div>
+        <div class="item item--2">css explicit</div>
+        <div class="item item--3">with explicit</div>
+        <div class="item item--4">flexbox explicit</div>
+        <div class="item item--5">and implicit</div>
+        <div class="item item--6">grid implicit</div>
+        <div class="item item--7">is implicit</div>
+        <div class="item item--8">great implicit</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Alignment of grid items.
+      </h4>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation: justify-items: start | end | center | stretch;
+        </strong>
+        <br>
+        If we use <span class="css"> justify-items: center</span> 
+        the grid items inside grid area will get centered horizontally which was not in flexbox.
+        if we use <span class="css">justify-items: start</span> 
+        the grid items will be placed at start inside grid area horizontally  which was not in flexbox.
+        if we use <span class="css">justify-items: end</span> 
+        the grid items will be placed at end inside grid area horizontally  which was not in flexbox.
+        if we use <span class="css">justify-items: stretch</span> 
+        the grid items will get stretched inside grid area horizontally which was not in flexbox, this is default behavior.
+      </p>
+      <div class="container justify-items-center">
+        <div class="item item--1">
+          modern explicit 
+        </div>
+        <div class="item item--2">css explicit</div>
+        <div class="item item--3">with explicit</div>
+        <div class="item item--4">flexbox explicit</div>
+        <div class="item item--5">and implicit</div>
+        <div class="item item--6">grid implicit</div>
+        <div class="item item--7">is implicit</div>
+        <div class="item item--8">great implicit</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Alignment of grid items.
+      </h4>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation: align-self: start | end | center | stretch;
+        </strong>
+        <br>
+        If we use <span class="css"> align-self: start</span> 
+        this will override the behavior defined in grid container as align-items: center
+        the grid items inside grid area will be placed at start vertically, 
+        align-self is done on grid item and align-items on grid container.
+      </p>
+      <div class="container align-items-center">
+        <div class="item item--1">
+          modern explicit 
+        </div>
+        <div class="item item--2">css explicit</div>
+        <div class="item item--3 align-self-start">with explicit</div>
+        <div class="item item--4">flexbox explicit</div>
+        <div class="item item--5">and implicit</div>
+        <div class="item item--6">grid implicit</div>
+        <div class="item item--7">is implicit</div>
+        <div class="item item--8">great implicit</div>
+      </div>
+    </div>
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Alignment of grid items.
+      </h4>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation: justify-self: start | end | center | stretch;
+        </strong>
+        <br>
+        If we use <span class="css"> justify-self: start</span> 
+        this will override the behavior defined in grid container as justify-items: center
+        the grid items inside grid area will place item at start horizontally, 
+        justify-self is done on grid item and justify-items on grid container.
+      </p>
+      <div class="container">
+        <div class="item item--1">
+          modern explicit 
+        </div>
+        <div class="item item--2 justify-self-start">css explicit</div>
+        <div class="item item--3">with explicit</div>
+        <div class="item item--4">flexbox explicit</div>
+        <div class="item item--5">and implicit</div>
+        <div class="item item--6">grid implicit</div>
+        <div class="item item--7">is implicit</div>
+        <div class="item item--8">great implicit</div>
+      </div>
+    </div>
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Alignment of grid items.
+      </h4>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation: justify-content: start | end | center | stretch | space-between | space-evenly | space-around;
+        </strong>
+        <br>
+        This is used to align whole grid track inside the container
+        justify-content: start will make grid track to start from start position end will position it to end of container horizontally,
+        center will center the grid track stretch with span from start to end of container horizontally which is default behavior, space-between will give spaces between columns, and each spaces will be of same size,
+        excluding space at start and end, space evenly will give evenly space on columns start and end but space between will match with start and end space,
+        space around will give same space to columns at start and at end resulting in addition of 2 spaces in between columns,
+      </p>
+      <div class="container-1 justify-content-center">
+        <div class="item item--1">
+          modern explicit 
+        </div>
+        <div class="item item--2">css explicit</div>
+        <div class="item item--3">with explicit</div>
+        <div class="item item--4">flexbox explicit</div>
+        <div class="item item--5">and implicit</div>
+        <div class="item item--6">grid implicit</div>
+        <div class="item item--7">is implicit</div>
+        <div class="item item--8">great implicit</div>
+      </div>
+    </div>    
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Fill hole
+      </h4>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation: grid-auto-flow: row dense;
+        </strong>
+        <br>
+        A hole is an empty space where there is no grid present, in order to fill these holes we use <span class="css">grid-auto-flow: row dense</span>
+      </p>
+      <p class="detail">With hole</p>
+      <div class="container-1 justify-content-center">
+        
+        <div class="item item--1">
+          modern explicit 
+        </div>
+        <div class="item item--2">css explicit</div>
+        <div class="item item--3">with explicit</div>
+        <div class="item item--4 grid-col-1-3">flexbox explicit</div>
+        <div class="item item--5">and implicit</div>
+        <div class="item item--6">grid implicit</div>
+        <div class="item item--7">is implicit</div>
+        <div class="item item--8 grid-col-1-3">great implicit</div>
+      </div>
+      <p class="detail">Filled hole</p>
+      <div class="container-1 justify-content-center grid-auto-flow-row-dense">
+        
+        <div class="item item--1">
+          modern explicit 
+        </div>
+        <div class="item item--2">css explicit</div>
+        <div class="item item--3">with explicit</div>
+        <div class="item item--4 grid-col-1-3">flexbox explicit</div>
+        <div class="item item--5">and implicit</div>
+        <div class="item item--6">grid implicit</div>
+        <div class="item item--7">is implicit</div>
+        <div class="item item--8 grid-col-1-3">great implicit</div>
+      </div>
+    </div>    
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Using max-content and min-content instead of 1fr in grid-template-rows or grid-template-columns
+      </h4>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation for: grid-template-rows: max-content 1fr;
+        </strong>
+        <br>
+        If we use <span class="css"> grid-template-rows: max-content 1fr;</span> 
+        this will create 2 rows of which first row will be created of width equal to fit the content inside of it.
+        the max-content do not makes line breaks so if sentence is added it will take the width till the sentence ends.
+      </p>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation for: grid-template-columns: max-content 1fr;
+        </strong>
+        <br>
+        If we use <span class="css"> grid-template-columns: max-content 1fr;</span> 
+        this will create 2 columns of which first column will be created of width equal to fit the content inside of it.
+        the max-content do not makes line breaks so if sentence is added it will take the width till the sentence ends.
+      </p>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation for: grid-template-rows: min-content 1fr;
+        </strong>
+        <br>
+        If we use <span class="css"> grid-template-rows: min-content 1fr;</span> 
+        this will create 2 rows of which first row will be created of width equal to fit one word inside of it.
+        the min-content makes line breaks so if sentence is added it will take the width of word with more number of characters.
+      </p>
+
+      <p class="detail">
+        <br>
+        <strong>
+          Explanation for: grid-template-columns: min-content 1fr;
+        </strong>
+        <br>
+        If we use <span class="css"> grid-template-columns: min-content 1fr;</span> 
+        this will create 2 columns of which first column will be created of width equal to fit one word inside of it.
+        the min-content makes line breaks so if sentence is added it will take the width of word with more number of characters.
+      </p>
+
+      <div class="container-2">
+        <div class="item item--1">
+          modern is modern
+        </div>
+        <div class="item item--2">css</div>
+        <div class="item item--3">with</div>
+        <div class="item item--4">flexbox is great to go with</div>
+        <div class="item item--5">and</div>
+        <div class="item item--6">grid</div>
+        <div class="item item--7">is</div>
+        <div class="item item--8">great</div>
+      </div>
+    </div>
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Using max-content and min-content instead of 1fr in grid-template-rows or grid-template-columns
+        problem: what if we need to give height to row or width to column in conjunction with max-content and min-content.
+      </h4>
+
+      <div class="container-2 grid-tem-row-150-min-content">
+        <div class="item item--1">
+          modern is modern
+        </div>
+        <div class="item item--2">css</div>
+        <div class="item item--3">with</div>
+        <div class="item item--4 b-r">flexbox is great to go with kk kjskajb akjsbkjabskj ajbvkajbskjabk
+          sjvbaks jbvkajs bkjabsk vjbkasjb</div>
+        <div class="item item--5">and</div>
+        <div class="item item--6">grid</div>
+        <div class="item item--7">is</div>
+        <div class="item item--8">great</div>
+      </div>
+    </div>
+
+
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Using max-content and min-content instead of 1fr in grid-template-rows or grid-template-columns
+        solution: using minmax
+      </h4>
+
+      <p class="detail">
+        <span class="css">grid-template-rows: repeat(2, minmax(150px, min-content))</span>
+        using minmax function it means the minimum height of row must be 150px and maximum height can be depending on content.
+        similarly we can use max-content with rows.
+        Note:minmax function we are using is to define for only one column or row.
+      </p>
+
+      <p class="detail">
+        the fr unit also behaves similar like min-content, it takes equal width if multiple columns or rows are there but when the rows or columns are shrinked the fr unit shrinks as well, but stops when it reaches the space where the word can be fitted inside grid
+      </p>
+
+
+      <div class="container-2 grid-tem-row-minmax-150-min-content">
+        <div class="item item--1">
+          modern is modern
+        </div>
+        <div class="item item--2">css</div>
+        <div class="item item--3">with</div>
+        <div class="item item--4 b-r">flexbox is great to go with kk kjskajb akjsbkjabskj ajbvkajbskjabk
+          sjvbaks jbvkajs bkjabsk vjbkasjb</div>
+        <div class="item item--5">and</div>
+        <div class="item item--6">grid</div>
+        <div class="item item--7">is</div>
+        <div class="item item--8">great</div>
+      </div>
+    </div>
+
+
+    
+    <div class="grid-container-1">
+      <h4 class="sub-title">
+        Using auto-fill and auto fit inside grid-template-columns, 
+        with grid-container width set to 1000px;
+      </h4>
+
+      <p class="detail">
+        <strong>Explanation: <span class="css">grid-template-rows: repeat(auto-fill, 100px)</span></strong>
+
+        This will create 1000 (grid-container width) / 100 (grid-template-rows width defined inside repeat function) = 10 columns and will fill all grid items inside of it.
+
+      </p>
+
+      <p class="detail">
+        <strong>Explanation: <span class="css">grid-template-rows: repeat(auto-fit, 100px)</span></strong>
+
+        This will create 1000 (grid-container width) / 100 (grid-template-rows width defined inside repeat function) = 10 columns and will fill grid items inside of it.
+        but also the extra grids will get width as 0.
+        below we have 8 items so 8 grids will be filled and rest 2 will have width as 0.
+        but this creates extra space as remaining unfilled grids get collapsed.
+        we can fix this using minmax given below
+      </p>
+
+      <div class="container-2 auto-fill">
+        <div class="item item--1">
+          modern
+        </div>
+        <div class="item item--2">css</div>
+        <div class="item item--3">with</div>
+        <div class="item item--4">flexbox </div>
+        <div class="item item--5">and</div>
+        <div class="item item--6">grid</div>
+        <div class="item item--7">is</div>
+        <div class="item item--8">great</div>
+      </div>
+    </div>
+    <div class="grid-container-1">
+     
+      <h4 class="sub-title">
+        Using auto-fit and minmax inside grid-template-columns, 
+        with grid-container width set to 1000px;
+      </h4>
+      <p class="detail">
+        <strong>Explanation: <span class="css">grid-template-rows: repeat(auto-fill, 100px)</span></strong>
+
+        This will create 1000 (grid-container width) / 100 (grid-template-rows width defined inside repeat function) = 10 columns and will fill all grid items inside of it.
+
+      </p>
+
+      <p class="detail">
+        <strong>Explanation: <span class="css">grid-template-rows: repeat(auto-fit, 100px)</span></strong>
+
+        this will create 1000px / 100px = 10 columns in which 8 will be filled and 2 will be collapsed due to which empty space will occur, but that empty space will get filled by minmax(100,1fr)
+        and as we decrease the width of viewport the minmax maintains to put grid item in 100px width and remaining grids are moved at the bottom grid making new row.
+
+
+        this is very important trick which we can use as responsive layout without writing media query
+      </p>
+
+      <div class="container-2 auto-fill-minmax">
+        <div class="item item--1">
+          modern
+        </div>
+        <div class="item item--2">css</div>
+        <div class="item item--3">with</div>
+        <div class="item item--4">flexbox </div>
+        <div class="item item--5">and</div>
+        <div class="item item--6">grid</div>
+        <div class="item item--7">is</div>
+        <div class="item item--8">great</div>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>
